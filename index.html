@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathaniel Ochoa - Developer & Mechanic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="IMG/PortBackground.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <h1>Nathaniel Ochoa</h1>
+      <p>Developer & Mechanic at PHX Engine Specialists</p>
+      <div class="button-container">
+        <a href="#contact" class="hero-button">Contact</a>
+        <a href="#bio" class="hero-button">Bio</a>
+        <a href="#blog" class="hero-button">Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder Sections -->
+  <section id="bio" class="section">
+    <h2>Bio</h2>
+    <p>This will be the bio section where you showcase your work ethic and certifications.</p>
+  </section>
+
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <p>Here you can share your thoughts, updates, and insights.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send</button>
+      <div class="social-links">
+  <a href="https://tiktok.com/your-profile" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tiktok_Logo.svg" alt="TikTok" class="social-icon">
+  </a>
+  <a href="https://youtube.com/your-profile" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" class="social-icon">
+  </a>
+  <a href="https://spotify.com/your-profile" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" class="social-icon">
+  </a>
+</div>
+
+<section id="work-ethic" class="section">
+  <h2>Work Ethic</h2>
+  <p>Watch this video to learn more about my dedication and work ethic.</p>
+  <div class="video-container">
+    <video controls class="work-ethic-video">
+      <source src="IMG/Work Tik Tok (1).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+    </form>
+  </section>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
